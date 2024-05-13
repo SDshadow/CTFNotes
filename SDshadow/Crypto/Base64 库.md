@@ -3,7 +3,7 @@
 **编码字符串到Base64**：
 
 ```
-pythonCopy Codeimport base64
+import base64
 
 text = "Hello, world!"
 encoded_text = base64.b64encode(text.encode('utf-8'))
@@ -13,7 +13,7 @@ print(encoded_text.decode('utf-8'))
 **解码Base64编码的字符串**：
 
 ```
-pythonCopy Codeimport base64
+import base64
 
 encoded_text = "SGVsbG8sIHdvcmxkIQ=="
 decoded_text = base64.b64decode(encoded_text)
@@ -23,7 +23,7 @@ print(decoded_text.decode('utf-8'))
 **编码文件到Base64**：
 
 ```
-pythonCopy Codeimport base64
+import base64
 
 with open('example.jpg', 'rb') as file:
     encoded_image = base64.b64encode(file.read())
@@ -32,7 +32,7 @@ with open('example.jpg', 'rb') as file:
 **解码Base64编码的文件**：
 
 ```
-pythonCopy Codeimport base64
+import base64
 
 with open('example.txt', 'r') as file:
     encoded_text = file.read()
@@ -45,7 +45,7 @@ with open('decoded_file.jpg', 'wb') as file:
 **URL安全的Base64编码**：
 
 ```
-pythonCopy Codeimport base64
+import base64
 
 text = "Hello, world!"
 encoded_text = base64.urlsafe_b64encode(text.encode('utf-8'))
